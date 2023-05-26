@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-user-select: none !important;
+      user-select: none !important;
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.circles .circle {
+  position: absolute;
+  display: block;
+  border-radius: 100%;
+  background-color: #f8ccc5;
+}
+
+.circles .circle1 {
+  top: -42%;
+  right: 2%;
+  width: 90vh;
+  height: 90vh;
+}
+
+.circles .circle2 {
+  top: -15%;
+  right: -21.5%;
+  width: 104vh;
+  height: 104vh;
+}
+
+.illustration {
+  height: 100vh;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-right: 13vh;
+}
+
+.illustration .animated {
+  height: 80vh;
+  margin-top: 8vh;
+}
+
+svg#attendance-svg:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#attendance-svg.animated #attendance-svg--background-complete--inject-34 {
+  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  opacity: 0;
+}
+
+svg#attendance-svg.animated #attendance-svg--Device--inject-34 {
+  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+svg#attendance-svg.animated #attendance-svg--Calendar--inject-34 {
+  -webkit-animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear wind;
+          animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear wind;
+  -webkit-animation-delay: 0.7s, 1.2s;
+          animation-delay: 0.7s, 1.2s;
+  opacity: 0;
+}
+
+svg#attendance-svg.animated #attendance-svg--character-4--inject-34 {
+  -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+  -webkit-animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
+}
+
+svg#attendance-svg.animated #attendance-svg--character-3--inject-34 {
+  -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 3s Infinite linear floating;
+  -webkit-animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
+}
+
+svg#attendance-svg.animated #attendance-svg--character-2--inject-34 {
+  -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+  -webkit-animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
+}
+
+svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
+  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear floating;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear floating;
+  -webkit-animation-delay: 0s, 1s;
+          animation-delay: 0s, 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes wind {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes wind {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 7vh;
+  width: 50vh;
+}
+
+.content .headline {
+  font-size: 7.4vh;
+  margin-bottom: 1rem;
+  margin-top: 2vh;
+  font-family: 'Sigmar', cursive;
+}
+
+.content .btn-cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  height: 30vh;
+  width: 31vh;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.m-btn {
+  margin-top: 4vh;
+  padding: 1.59vh 4.06vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2.5vh;
+  font-size: 2.4vh;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  font-family: 'pacifico';
+  background-color: #f2bab1;
+  color: #a33131;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px 0.6px #df7a7a9d;
+          box-shadow: 0 0 8px 0.6px #df7a7a9d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.m-btn:hover {
+  background-color: #f0aa9f;
+  color: #922929;
+  -webkit-box-shadow: 0 0 10px 1px #df7a7a9d;
+          box-shadow: 0 0 10px 1px #df7a7a9d;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.m-btn:active, .m-btn.active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #e99b8f;
+  color: #892424;
+  -webkit-box-shadow: 0 0 9px 0.7px #df7a7a9d;
+          box-shadow: 0 0 9px 0.7px #df7a7a9d;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Device</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sigmar&family=Pacifico&family=Raleway&family=Roboto&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../assets/css/qrcode-reader.css">
+  <link rel="stylesheet" href="../../assets/css/common.css">  
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button type="button" id="openreader-register" style="display:none">Register QR code</button>  
+  <div class="container" id="qrr-container" style="display: block;">
+    <nav style="font-size:16px;--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" class="alert alert-light py-2 px-3 mt-4 mb-0" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <div class="path">
+          <li class="breadcrumb-item"><a href="../../">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="">Attendance</li>
+          <li class="breadcrumb-item active" aria-current="">QR Scanner</li>
+        </div>
+      </ol>
+    </nav>
+    <div class="heading">Attendance System</div>
+    <div class="instruction text-muted mb-2 mt-4 fs-6">Scan your QR code to register device for attendance</div>
+    <div id="qrr-loading-message" style="display: none;">⌛ Loading video...</div>
+    <canvas id="qrr-canvas" style="transform: scaleX(-1)" class="" height="480" width="640"></canvas>
+    <audio hidden="" id="qrr-beep" src="../../assets/audio/beep.mp3" type="audio/mp3"></audio>
+    
+  </div>
+  <div class="toast-container bottom-0 end-0 p-2">
+  </div>
+
+
+  
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="../../assets/js/qrcode-reader-registration.js?v=20190604"></script>
+
+<script>
+
+  $(function(){
+
+    // overriding path of JS script and audio
+    $.qrCodeReader.jsQRpath = "../../assets/js/jsQR/jsQR.min.js";
+    $.qrCodeReader.beepPath = "../../assets/audio/beep.mp3";
+
+    // bind all elements of a given class
+    $(".qrcode-reader").qrCodeReader();
+
+    // bind elements by ID with specific options
+    $("#openreader-register").qrCodeReader({multiple: true, target: "#register", skipDuplicates: false});
+
+    setTimeout(function(){
+      $("#openreader-register").click();
+
+    },1000);
+
+  });
+
+</script>
+
+
+</body>
+</html>
