@@ -1,4 +1,8 @@
+import {server} from "./config";
+
 $(document).ready(function () {
+
+    $('#download-btn').attr("href",server+"/report/download/daily")
 
     function dataConverter(val){
 
@@ -10,7 +14,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "GET",
-        url: "http://10.0.61.27:8080/report/daily",
+        url: server+"/report/daily",
         secure : false,
 
         success: function (response) {

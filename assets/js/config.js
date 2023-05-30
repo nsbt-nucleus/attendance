@@ -1,0 +1,1 @@
+export const server="http://10.0.61.29:8080";

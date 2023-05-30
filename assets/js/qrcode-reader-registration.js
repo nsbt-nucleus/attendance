@@ -1,6 +1,7 @@
 ;(function( $, window, document, undefined ) {
 
   "use strict";
+  
 
   // cross browser request animation frame
   if ( !window.requestAnimationFrame ) {
@@ -158,15 +159,15 @@
       qrr.codes = [];
 
 
-      // close on ESC, doneReading on Enter if multiple
-      $(document).on('keyup.qrCodeReader', function(e) {
-        if(e.keyCode === 27) {
-          qrr.close();
-        }
-        if (qrr.settings.multiple && e.keyCode === 13) {
-          qrr.doneReading();
-        }
-      });
+      // // close on ESC, doneReading on Enter if multiple
+      // $(document).on('keyup.qrCodeReader', function(e) {
+      //   if(e.keyCode === 27) {
+      //     qrr.close();
+      //   }
+      //   if (qrr.settings.multiple && e.keyCode === 13) {
+      //     qrr.doneReading();
+      //   }
+      // });
 
       qrr.isOpen = true;
 
@@ -366,7 +367,7 @@
 
 function showToast(message){
   if (message === undefined || message === null){
-    message = "Something went wrong...";
+      message = "Something went wrong...";
   }
   let date = new Date();
   let toastID = 'toast' + date.getHours() + date.getMinutes() + date.getSeconds();
@@ -378,41 +379,40 @@ function showToast(message){
   $('.toast-container').append(toast);
   $('#'+toastID).toast('show');
   setTimeout(function(){
-    toast.remove();
+      toast.remove();
   },3000);
   return toastID;
 }
 
 function ajaxCall(employeeDetails){
+  var rootUrl = server + "/users";
 
-    var rootUrl = "http://10.0.61.27:8080/users";
+  const basicJson =  { user_name : employeeDetails[0], userId : employeeDetails[1], password : employeeDetails[2], key: employeeDetails[3] };
+  console.log("basic json...",basicJson)
+  console.log(employeeDetails[4]);
 
-    const basicJson =  { user_name : employeeDetails[0], userId : employeeDetails[1], password : employeeDetails[2], key: employeeDetails[3] };
-    console.log("basic json...",basicJson)
-    console.log(employeeDetails[4]);
-
-    if( employeeDetails[4] === "register" ){
-        rootUrl = rootUrl + "/register-user/code";
-    }else{
-      console.log("Invalid QR Code ");
+  if( employeeDetails[4] === "register" ){
+      rootUrl = rootUrl + "/register-user/code";
+  }else{
+      console.log("Invalid QR Code");
       showToast("Invalid QR Code")
-      return;
-    }
+  return;
+  }
 
-    $.ajax({
-            type: "POST",
-            url: rootUrl,
-            contentType: 'application/json',
-            data: JSON.stringify(basicJson),
-            dataType: "json",
-            success: function (data) {
-              console.log(data.message);
-              showToast(data.message)
-            },
-            error : function(data) {
-              console.log("data" , data)
-              showToast(data.responseJSON.message);
-            }
-    });
+  $.ajax({
+      type: "POST",
+      url: rootUrl,
+      contentType: 'application/json',
+      data: JSON.stringify(basicJson),
+      dataType: "json",
+      success: function (data) {
+          console.log(data.message);
+          showToast(data.message)
+      },
+      error : function(data) {
+          console.log("data" , data)
+          showToast(data.responseJSON.message);
+      }
+  });
 
-}
+}   

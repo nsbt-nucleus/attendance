@@ -1,3 +1,5 @@
+import {server} from "./config.js";
+
 $(function () {
   function showToast(header, message) {
     if (message === undefined || message === null) {
@@ -97,7 +99,7 @@ $(function () {
   ]).then(startWebcam);
 
   const fetchUser = async () => {
-    const response = await fetch("http://10.0.61.27:8080/users");
+    const response = await fetch(server + "/users");
     return response.json();
   };
 
@@ -209,7 +211,7 @@ $(function () {
             }
           }
         });
-        show_toast = false;
+        // show_toast = false;
       }
     }, 200);
   });
@@ -238,7 +240,7 @@ $(function () {
     const stringJson = JSON.stringify(basicJson);
     $.ajax({
       type: "POST",
-      url: "http://10.0.61.27:8080/attendance/in-time",
+      url: server + "/attendance/in-time",
       contentType: "application/json",
       data: JSON.stringify(basicJson),
       dataType: "json",
@@ -278,7 +280,7 @@ $(function () {
     }
     $.ajax({
       type: "GET",
-      url: "http://10.0.61.27:8080/attendance/out-time/" + userId,
+      url: server + "/attendance/out-time/" + userId,
       success: function (data) {
         $("#btnOutTime").text("out-time");
         // myModal.show();

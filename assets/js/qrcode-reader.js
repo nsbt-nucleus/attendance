@@ -387,7 +387,7 @@ function showToast(message){
 
 function ajaxCall(employeeDetails){
 
-    var rootUrl = "http://10.0.61.27:8080/users";
+    var rootUrl = server + "/users";
 
     const basicJson =  { user_name : employeeDetails[0], userId : employeeDetails[1], password : employeeDetails[2], key: employeeDetails[3] };
     console.log("basic json ...", basicJson)
