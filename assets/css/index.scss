@@ -2,18 +2,18 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   -ms-user-select: none !important;
-  user-select: none !important;
+      user-select: none !important;
   -moz-user-select: none !important;
   -webkit-user-select: none !important;
 }
 
 img {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-user-drag: none;
 }
 
@@ -56,8 +56,8 @@ body {
 .illustration {
   height: 100vh;
   -webkit-box-pack: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   padding-right: 13vh;
 }
 
@@ -72,53 +72,53 @@ svg#attendance-svg:not(.animated) .animable {
 
 svg#attendance-svg.animated #attendance-svg--background-complete--inject-34 {
   -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+          animation-delay: 0.5s;
   opacity: 0;
 }
 
 svg#attendance-svg.animated #attendance-svg--Device--inject-34 {
   -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
   -webkit-animation-delay: 0s;
-  animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 svg#attendance-svg.animated #attendance-svg--Calendar--inject-34 {
   -webkit-animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear wind;
-  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear wind;
+          animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear wind;
   -webkit-animation-delay: 0.7s, 1.2s;
-  animation-delay: 0.7s, 1.2s;
+          animation-delay: 0.7s, 1.2s;
   opacity: 0;
 }
 
 svg#attendance-svg.animated #attendance-svg--character-4--inject-34 {
   -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
-  animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
   -webkit-animation-delay: 0s, 0.7s;
-  animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
 }
 
 svg#attendance-svg.animated #attendance-svg--character-3--inject-34 {
   -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 3s Infinite linear floating;
-  animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 3s Infinite linear floating;
   -webkit-animation-delay: 0s, 0.7s;
-  animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
 }
 
 svg#attendance-svg.animated #attendance-svg--character-2--inject-34 {
   -webkit-animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
-  animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
+          animation: 0.7s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight, 3s Infinite linear floating;
   -webkit-animation-delay: 0s, 0.7s;
-  animation-delay: 0s, 0.7s;
+          animation-delay: 0s, 0.7s;
 }
 
 svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear floating;
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear floating;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 3s Infinite linear floating;
   -webkit-animation-delay: 0s, 1s;
-  animation-delay: 0s, 1s;
+          animation-delay: 0s, 1s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -143,12 +143,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -156,42 +156,42 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @-webkit-keyframes wind {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   25% {
     -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
+            transform: rotate(1deg);
   }
   75% {
     -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 }
 
 @keyframes wind {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   25% {
     -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
+            transform: rotate(1deg);
   }
   75% {
     -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 }
 
@@ -199,12 +199,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateX(30px);
-    transform: translateX(30px);
+            transform: translateX(30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -212,12 +212,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateX(30px);
-    transform: translateX(30px);
+            transform: translateX(30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -225,16 +225,16 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -242,16 +242,16 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
   50% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -259,12 +259,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
+            transform: translateX(-30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -272,12 +272,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
+            transform: translateX(-30px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -298,8 +298,8 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 .content .btn-cont {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +332,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   border: none;
   cursor: pointer;
   -webkit-box-shadow: 0 0 8px 0.6px #df7a7a9d;
-  box-shadow: 0 0 8px 0.6px #df7a7a9d;
+          box-shadow: 0 0 8px 0.6px #df7a7a9d;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -341,21 +341,22 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   background-color: #f0aa9f;
   color: #922929;
   -webkit-box-shadow: 0 0 10px 1px #df7a7a9d;
-  box-shadow: 0 0 10px 1px #df7a7a9d;
+          box-shadow: 0 0 10px 1px #df7a7a9d;
   -webkit-transform: scale(1.09);
-  transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .m-btn:active, .m-btn.active {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
   background-color: #e99b8f;
   color: #892424;
   -webkit-box-shadow: 0 0 9px 0.7px #df7a7a9d;
-  box-shadow: 0 0 9px 0.7px #df7a7a9d;
+          box-shadow: 0 0 9px 0.7px #df7a7a9d;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+
 
 @media screen and (max-width: 740px) {
   .circles .circle1 {
@@ -364,6 +365,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     width: 54vh;
     height: 54vh;
   }
+
   .circles .circle2 {
     top: -3%;
     right: -28.5%;
@@ -372,6 +374,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   }
 }
 
+
 @media screen and (max-width: 490px) {
   .circles .circle1 {
     top: -19%;
@@ -379,11 +382,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     width: 44vh;
     height: 44vh;
   }
+
   .circles .circle2 {
-    top: 2%;
-    right: -42.5%;
-    width: 50vh;
-    height: 50vh;
+      top: 2%;
+      right: -42.5%;
+      width: 50vh;
+      height: 50vh;
   }
 }
 
@@ -394,17 +398,20 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     margin-top: 2vh;
     font-family: 'Sigmar', cursive;
   }
+
   .circles .circle1 {
     top: -13%;
     right: 2%;
     width: 28vh;
     height: 28vh;
   }
+
   .circles .circle2 {
     top: 0%;
     right: -36.5%;
     width: 36vh;
     height: 36vh;
   }
+
 }
 /*# sourceMappingURL=index.css.map */

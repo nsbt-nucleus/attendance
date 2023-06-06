@@ -1,4 +1,4 @@
-import {server} from "./config";
+import {server} from "./config.js";
 
 $(document).ready(function () {
 

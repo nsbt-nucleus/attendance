@@ -200,7 +200,7 @@ $(function () {
             $("#userId").val(max);
             let current_user = $("#userId").val();
 
-            if (current_user === "unknown") {
+            if (current_user === "scanning") {
               $("#userId").val("scanning");
             }
 
