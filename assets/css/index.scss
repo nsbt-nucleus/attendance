@@ -359,58 +359,83 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 
 
 @media screen and (max-width: 740px) {
+
+  .illustration{
+    display: none !important;
+  }
+
   .circles .circle1 {
-    top: -25%;
-    right: 5%;
-    width: 54vh;
-    height: 54vh;
+    top: -148px;
+    right: 25px;
+    width: 332px;
+    height: 332px;
   }
 
   .circles .circle2 {
-    top: -3%;
-    right: -28.5%;
-    width: 64vh;
-    height: 64vh;
+    top: -30px;
+    right: -154px;
+    width: 394px;
+    height: 394px;
   }
 }
 
 
 @media screen and (max-width: 490px) {
-  .circles .circle1 {
-    top: -19%;
-    right: -15%;
-    width: 44vh;
-    height: 44vh;
-  }
-
-  .circles .circle2 {
-      top: 2%;
-      right: -42.5%;
-      width: 50vh;
-      height: 50vh;
-  }
+  
+  
+.logo {
+  height: 184px;
+  width: 190px;
 }
 
-@media screen and (max-width: 350px) {
+.content .headline {
+  font-size: 39px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Sigmar', cursive;
+}
+
+  .circles .circle1 {
+    top: -19%;
+    right: -48px;
+    width: 271px;
+    height: 271px;
+}
+
+.circles .circle2 {
+    top: 49px;
+    right: -139px;
+    width: 280px;
+    height: 280px;
+}
+}
+
+@media screen and (max-width: 360px) {
+
+  .logo {
+    height: 184px;
+    width: 190px;
+  }
+
   .content .headline {
-    font-size: 6.4vh;
-    margin-bottom: 1rem;
-    margin-top: 2vh;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-family: 'Sigmar', cursive;
   }
 
   .circles .circle1 {
-    top: -13%;
-    right: 2%;
-    width: 28vh;
-    height: 28vh;
+    top: -104px;
+    right: -14px;
+    width: 200px;
+    height: 200px;
   }
 
   .circles .circle2 {
-    top: 0%;
-    right: -36.5%;
-    width: 36vh;
-    height: 36vh;
+    top: -3px;
+    right: -113px;
+    width: 220px;
+    height: 220px;
   }
 
 }
