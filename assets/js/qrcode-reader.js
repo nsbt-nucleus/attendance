@@ -40,7 +40,7 @@
         // wait for repeatTimeout milliseconds before trying for the next lookup. 
         // Set to 0 to disable automatic re-tries: in such case user will have to 
         // click on the webcam canvas to trigger a new reading tentative
-        repeatTimeout: 1500, 
+        repeatTimeout: 800, 
         // target input element to fill in with the readings in case of successful reading 
         // (newline separated in case of multiple readings).
         // Such element can be specified as jQuery object or as string identifier, e.g. "#target-input"
@@ -54,7 +54,7 @@
         // In case of single reading, call immediately after the successful reading 
         // (in the latter case the QRCode is passed as a single string value)
         callback: function(code) {
-            console.log( "code", code );
+            console.log("code", code);
         }
       }
   };
@@ -249,14 +249,37 @@
 
         // a QRCode has been found        
         if (code && qrr.settings.qrcodeRegexp.test(code.data)) {
-          // draw lines around the matched QRCode
-          qrr.drawBox(code.location, qrr.settings.lineColor);
+          
           codeRead = true;
-          qrr.codes.push(code.data);
 
-          // play audio if requested
-          if (qrr.settings.audioFeedback) {
-            qrr.audio[0].play();
+          if (code.data != ""  && code.data.split(";").length == 6){
+            console.log("Valid Code");
+
+            // get data from QR and send api request
+            var employeeDetails = code.data.split(";");
+            console.log(employeeDetails);
+            var dateTime = new Date(employeeDetails[5]) //time extracted from qr code;
+            var secondsDifference = Math.abs(dateTime - new Date()) / 1000;
+            console.log(secondsDifference);
+
+            if( secondsDifference > 5 ){
+                console.log("QR-CODE EXPIRED !!! Attendence can not be recorded");
+            }else{
+                console.log(qrr);
+                console.log(code);
+                ajaxCall(employeeDetails);
+            }
+
+            // draw lines around the matched QRCode
+            qrr.drawBox(code.location, qrr.settings.lineColor);
+            qrr.codes.push(code.data);
+
+            // play audio if requested
+            if (qrr.settings.audioFeedback) {
+              qrr.audio[0].play();
+            }
+
+
           }
 
           // read multiple codes
@@ -268,28 +291,6 @@
             if(qrr.settings.skipDuplicates) {
               qrr.codes = $.unique(qrr.codes);
             }
-
-
-            var employeeDetails = code.data.split(";");
-            console.log(employeeDetails);
-
-            var dateTime = new Date( employeeDetails[5] ) //time extracted from qr code;
-            console.log(dateTime);
-
-            var secondsDifference = Math.abs(dateTime - new Date()) / 1000;
-            console.log(secondsDifference);
-
-            if( secondsDifference > 5 ){
-                console.log("attendence can not be recorded");
-                alert("QR-CODE EXPIRED");
-            }else{
-                // show our reading
-                console.log( qrr );
-                // console.log( qrr.outputData );
-                console.log( code );
-                ajaxCall(employeeDetails);
-            }
-
             
             // read again by clicking on the canvas
             qrr.canvas.on("click.qrCodeReader", qrr.startReading);
@@ -297,9 +298,6 @@
             // repeat reading after a timeout
             if (qrr.settings.repeatTimeout > 0) {
               setTimeout(qrr.startReading, qrr.settings.repeatTimeout);
-            } else {
-              qrr.loadingMessage.text("Click on the image to read the next QRCode");
-              qrr.loadingMessage.show();
             }
 
           // single reading
@@ -385,15 +383,11 @@ function showToast(message){
 
 
 
-function ajaxCall(employeeDetails){
-
+async function ajaxCall(employeeDetails){
+    
+  if (employeeDetails.length == 6){
     var rootUrl = server + "/users";
-
     const basicJson =  { user_name : employeeDetails[0], userId : employeeDetails[1], password : employeeDetails[2], key: employeeDetails[3] };
-    console.log("basic json ...", basicJson)
-    console.log(employeeDetails[4]);
-
-
 
     if( employeeDetails[4] == "sign-in" ){
         rootUrl = rootUrl + "/signInCode";
@@ -401,7 +395,7 @@ function ajaxCall(employeeDetails){
         rootUrl = rootUrl + "/signOutCode";
     }else{
         console.log("Invalid QR Code");
-        showToast("Invalid QR Code")
+        showToast("Invalid QR Code");
         return;
     }
 
@@ -420,5 +414,8 @@ function ajaxCall(employeeDetails){
         showToast(data.responseJSON.errors[0]);
       }
     });
+  }else{
+    showToast("Invalid QR Code")
+  }
 
 }

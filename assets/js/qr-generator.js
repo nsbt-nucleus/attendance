@@ -38,7 +38,7 @@ $(document).ready(function () {
             var name = $('#name').val();
             var employeeId = $('#employeeId').val();
             var pass = $('#password').val();
-            data = name + ";" + employeeId + ";" + window.btoa(pass) + ";" + window.btoa(new Date());
+            data = name + ";" + employeeId + ";" + btoa(pass) + ";" + btoa(new Date());
             Save_data("key",data);
             generateQrCode(data + ";" + $(this).attr("data-type"));
         }
@@ -50,7 +50,7 @@ $(document).ready(function () {
             var qrContainer = $('#qr-container');
             qrContainer.empty();
             var qrCode = new QRCode(qrContainer[0], {
-                text: data + ";" + new Date(),
+                text: data + ";" + new Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata', hour12: false}),
                 width: 230,
                 height: 230,
                 colorDark: "#1c1c1c",

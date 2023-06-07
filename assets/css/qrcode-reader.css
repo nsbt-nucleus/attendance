@@ -46,6 +46,27 @@
   margin: 30px auto 0;
 }
 
+.scanner{
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #232323;
+}
+
+.scanner .loader{    
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scanner .loader .spinner-border{   
+  border-width: 5px;
+  width: 34px;
+  height: 34px;
+  border-color: #b13b3b;
+  border-right-color: transparent;
+}
+
 #qrr-canvas {
   display: block;    
   height: 30vw;
@@ -53,7 +74,6 @@
   max-height: 360px;
   width: fit-content;
   overflow-x: scroll;
-  box-shadow: 0 0 7px #232323;
   filter: brightness(1.2);
   border-radius: 10px;
 }

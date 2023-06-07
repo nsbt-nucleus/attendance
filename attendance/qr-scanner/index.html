@@ -28,7 +28,10 @@
     <div class="heading">Attendance System</div>
     <div class="instruction text-muted mb-2 mt-3 fs-6">Scan your QR code to mark attendance</div>
     <div id="qrr-loading-message" style="display: none;">⌛ Loading video...</div>
-    <canvas id="qrr-canvas" style="transform: scaleX(-1)" class="" height="480" width="640"></canvas>
+    <div class="scanner">
+      <div class="loader"><div class="spinner-border text-dark"></div></div>
+      <canvas id="qrr-canvas" style="transform: scaleX(-1)" class="" height="480" width="640"></canvas>
+    </div>
     <audio hidden="" id="qrr-beep" src="../../assets/audio/beep.mp3" type="audio/mp3"></audio>
     
   </div>
@@ -52,15 +55,12 @@
     $.qrCodeReader.jsQRpath = "../../assets/js/jsQR/jsQR.min.js";
     $.qrCodeReader.beepPath = "../../assets/audio/beep.mp3";
 
-    // bind all elements of a given class
-    // $(".qrcode-reader").qrCodeReader();
-
     // bind elements by ID with specific options
-    $("#openreader-multi2").qrCodeReader({ multiple: true, target: "#multiple2", skipDuplicates: false });
+    $("#openreader-multi2").qrCodeReader({ multiple: true, target: "#multiple2", skipDuplicates: true });
 
     setTimeout(function(){
       $("#openreader-multi2").click()
-    },50);
+    },100);
 
     // read or follow qrcode depending on the content of the target input
 

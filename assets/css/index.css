@@ -299,6 +299,10 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   display: block;
 }
 
+.m-btn.mb {
+  display: none;
+}
+
 .content {
   width: 100%;
   margin-left: 7vh;
@@ -383,6 +387,9 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   .m-btn.dt {
     display: none;
   }
+  .m-btn.mb {
+    display: block;
+  }
   .left-cont {
     margin-top: -54px;
   }
@@ -451,10 +458,13 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 
 @media screen and (max-width: 360px) {
   .logo {
-    height: 194px;
-    width: 200px;
+    height: 200px;
+    width: 206px;
     margin-top: 6px;
     margin-left: -8px;
+  }
+  .left-cont {
+    margin-top: -64px;
   }
   .content {
     width: 100%;
@@ -464,7 +474,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   .content .headline {
     font-size: 38px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: 'Sigmar', cursive;
   }
   .circles .circle1 {
@@ -478,6 +488,9 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     right: -113px;
     width: 220px;
     height: 220px;
+  }
+  .btn-cont {
+    margin-bottom: 10px;
   }
   .m-btn {
     font-size: 16px;
