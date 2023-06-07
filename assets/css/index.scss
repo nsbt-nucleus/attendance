@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  // overflow: hidden !important;
+  overflow: hidden !important;
 }
 
 .circles {
@@ -282,6 +282,17 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 
 .main-cont{
   margin-right: 0px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.left-cont{
+  margin-top: -28px;
+}
+
+.m-btn.dt{
+  display: block;
 }
 
 .content {
@@ -361,12 +372,20 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 }
 
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 765px) {
 
   .content {
     width: 100%;
     margin-left: 45px;
     width: 60%;
+  }
+
+  .m-btn.dt{
+    display: none;
+  }
+
+  .left-cont{
+    margin-top: -54px;
   }
 
   .illustration{
@@ -395,6 +414,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   .logo {
     height: 194px;
     width: 200px;
+    margin-top: 10px;
   }
 
   .content {
@@ -404,9 +424,9 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   }
 
   .content .headline {
-    font-size: 40px;
-    margin-bottom: 8px;
-    margin-top: 0px;
+    font-size: 42px;
+    margin-bottom: 18px;
+    margin-top: 10px;
     font-family: 'Sigmar', cursive;
   }
 
@@ -426,6 +446,19 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   
   .m-btn{
     font-size: 16px;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    text-overflow: clip;
+    margin-bottom: 3px;
+  }
+
+  .m-btn:hover {
+    background-color: #f0aa9f;
+    color: #922929;
+    -webkit-box-shadow: 0 0 10px 1px #df7a7a9d;
+            box-shadow: 0 0 10px 1px #df7a7a9d;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -433,14 +466,22 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
 
 
   .logo {
-    height: 184px;
-    width: 190px;
+    height: 194px;
+    width: 200px;
+    margin-top: 6px;
+    margin-left: -8px;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 37px;
+    width: 70%;
   }
 
   .content .headline {
-    font-size: 36px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-family: 'Sigmar', cursive;
   }
 
@@ -456,6 +497,14 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     right: -113px;
     width: 220px;
     height: 220px;
+  }
+
+  .m-btn{
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: clip;
   }
 
 }
