@@ -358,7 +358,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   transition: all 0.3s ease-in-out;
 }
 
-.m-btn:hover {
+.m-btn:not(.disabled):hover {
   background-color: #f0aa9f;
   color: #922929;
   -webkit-box-shadow: 0 0 10px 1px #df7a7a9d;
@@ -376,6 +376,12 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   box-shadow: 0 0 9px 0.7px #df7a7a9d;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.m-btn.disabled {
+  color: #ba5353;
+  background-color: #efb5ac;
+  cursor: default;
 }
 
 @media screen and (max-width: 765px) {
@@ -446,7 +452,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
     text-overflow: clip;
     margin-bottom: 3px;
   }
-  .m-btn:hover {
+  .m-btn:not(.disabled):hover {
     background-color: #f0aa9f;
     color: #922929;
     -webkit-box-shadow: 0 0 10px 1px #df7a7a9d;
