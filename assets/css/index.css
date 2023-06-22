@@ -382,6 +382,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   color: #ba5353;
   background-color: #efb5ac;
   cursor: default;
+  pointer-events: none !important;
 }
 
 @media screen and (max-width: 765px) {
