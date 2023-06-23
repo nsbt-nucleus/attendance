@@ -42,9 +42,9 @@ nav{
         display: flex;
     }
 
-    & img {
-        width: 230px;
-        height: 230px;
+    & img, & canvas {
+        width: 255px;
+        height: 255px;
     }
 }
 
@@ -98,8 +98,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 260px;
-    width: 260px;
+    height: 285px;
+    width: 285px;
     border-radius: 15px;
     border: 5px solid #1c1c1ced;
     
@@ -110,7 +110,7 @@ nav{
         vertical-align: sub;
     }
 
-    & img{
+    & img, & canvas{
         border-radius: 6px;
     }
 }

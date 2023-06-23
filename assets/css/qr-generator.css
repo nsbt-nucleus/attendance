@@ -66,9 +66,9 @@ nav {
   display: flex;
 }
 
-.qr-code-container img {
-  width: 230px;
-  height: 230px;
+.qr-code-container img, .qr-code-container canvas {
+  width: 255px;
+  height: 255px;
 }
 
 .attendance-form {
@@ -158,8 +158,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 260px;
-  width: 260px;
+  height: 285px;
+  width: 285px;
   border-radius: 15px;
   border: 5px solid #1c1c1ced;
 }
@@ -171,7 +171,7 @@ nav {
   vertical-align: sub;
 }
 
-.qr-code-img img {
+.qr-code-img img, .qr-code-img canvas {
   border-radius: 6px;
 }
 
