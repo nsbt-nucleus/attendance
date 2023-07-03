@@ -102,14 +102,14 @@
 
 .toast-body{
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   font-family: Lato;
   color: #383838;
 }
 
 .toast-header{
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 15px;
   color: #292929;
   font-family: 'Roboto';
 }
