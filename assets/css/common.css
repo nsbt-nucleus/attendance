@@ -255,10 +255,10 @@ select {
 	/* width: -webkit-fill-available;
 	width: -moz-fill-available;
 	width: fill-available; */
-	-webkit-user-select: all !important;
-	-moz-user-select: all !important;
-	-ms-user-select: all !important;
-	user-select: all !important;
+	-webkit-user-select: initial !important;
+	-moz-user-select: initial !important;
+	-ms-user-select: initial !important;
+	user-select: initial !important;
 	width: 100%;
 	outline: none;
 	-webkit-transition: all 0.2s ease-in-out !important;
