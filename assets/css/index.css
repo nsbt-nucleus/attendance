@@ -385,30 +385,7 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   pointer-events: none !important;
 }
 
-
-@media screen and (max-width: 940px) {
-  
-  .illustration {
-    display: none !important;
-  }
-
-  .circles .circle1 {
-      top: -270px;
-      right: 42px;
-      width: 562px;
-      height: 562px;
-  }
-  .circles .circle2 {
-    top: -92px;
-    right: -216px;
-    width: 600px;
-    height: 600px;
-}
-
-}
-
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 765px) {
   .content {
     width: 100%;
     margin-left: 45px;
@@ -422,6 +399,9 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   }
   .left-cont {
     margin-top: -54px;
+  }
+  .illustration {
+    display: none !important;
   }
   .circles .circle1 {
     top: -148px;
@@ -519,10 +499,8 @@ svg#attendance-svg.animated #attendance-svg--character-1--inject-34 {
   .btn-cont {
     margin-bottom: 10px;
   }
-  .m-btn {    
-    border-radius: 16px;
-    font-size: 16.5px;
-    padding: 1.53vh 3.9vh;
+  .m-btn {
+    font-size: 16px;
     letter-spacing: 0.8px;
     margin-bottom: 4px;
     white-space: nowrap;
