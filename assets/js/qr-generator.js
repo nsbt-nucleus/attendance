@@ -56,7 +56,7 @@ $(document).ready(function () {
                 height: 425,
                 colorDark: "#1c1c1c",
                 colorLight: "#f7f7f7",
-                correctLevel: QRCode.CorrectLevel.M
+                correctLevel: QRCode.CorrectLevel.L
             });
             qrContainer.removeAttr('title');
             qrContainer.removeAttr('style');
@@ -69,10 +69,10 @@ $(document).ready(function () {
                 height: 425,
                 colorDark: "#1c1c1c",
                 colorLight: "#f7f7f7",
-                correctLevel: QRCode.CorrectLevel.M
+                correctLevel: QRCode.CorrectLevel.L
             });
             qrContainer.removeAttr('title');
-        }, 300000);
+        }, 3000);
     }
 
     function getDate(){
@@ -115,7 +115,7 @@ $(document).ready(function () {
     }
     window.onpopstate = function() {
         if ($('.qr-code-container').hasClass('active')){
-            console.log(confirm("Did you get this 'Register QR Code' scanned on Attendance System\nIf not then show this QR Code in attendance system to get registered"));
+            console.log(confirm("Did you get this 'Register QR Code' scanned on Attendance System\nIf not, then show this QR Code in attendance system to get registered"));
         }
     };
 });
