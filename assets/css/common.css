@@ -9,6 +9,11 @@
 	-webkit-user-select: none !important;
 }
 
+.link{
+	text-decoration: none;
+	color: rgb(44, 44, 107);
+}
+
 img {
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -328,7 +333,19 @@ button .spinner-border {
 
 .instruction {
 	text-align: center;
-	font-size: 13px;
+	font-size: 14px;
+}
+
+.mt--1{
+	margin-top: -0.25rem;
+}
+
+.mt--2{
+	margin-top: -0.5rem;
+}
+
+.mt--3{
+	margin-top: -1rem;
 }
 
 @media screen and (max-width: 768px) {

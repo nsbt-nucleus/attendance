@@ -1,1 +1,121 @@
-var _0x15f7ab=(function(){var _0x26fb7b=!![];return function(_0x273c4c,_0x1e7fda){var _0x46bd9d=_0x26fb7b?function(){if(_0x1e7fda){var _0x3eaf40=_0x1e7fda['\x61\x70\x70\x6c\x79'](_0x273c4c,arguments);return _0x1e7fda=null,_0x3eaf40;}}:function(){};return _0x26fb7b=![],_0x46bd9d;};}()),_0x3d52b1=_0x15f7ab(this,function(){var _0x448912={};_0x448912['\x6c\x69\x46\x7a\x46']='\x28\x28\x28\x2e\x2b\x29\x2b\x29\x2b\x29\x2b\x24';var _0x2590a8=_0x448912;return _0x3d52b1['\x74\x6f\x53\x74\x72\x69\x6e\x67']()['\x73\x65\x61\x72\x63\x68'](_0x2590a8['\x6c\x69\x46\x7a\x46'])['\x74\x6f\x53\x74\x72\x69\x6e\x67']()['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72'](_0x3d52b1)['\x73\x65\x61\x72\x63\x68'](_0x2590a8['\x6c\x69\x46\x7a\x46']);});_0x3d52b1(),$(document)['\x72\x65\x61\x64\x79'](function(){var _0x43aae8={'\x48\x73\x41\x53\x63':function(_0x11c2b8,_0x1e76cb){return _0x11c2b8(_0x1e76cb);},'\x56\x79\x4a\x62\x4d':'\x2e\x61\x74\x74\x65\x6e\x64\x61\x6e\x63\x65\x2d\x66\x6f\x72\x6d','\x4f\x79\x43\x66\x78':'\x61\x63\x74\x69\x76\x65','\x6b\x57\x5a\x74\x79':function(_0x348910,_0x588ba3){return _0x348910(_0x588ba3);},'\x4d\x4a\x68\x66\x4e':'\x2e\x6c\x6f\x67\x69\x6e\x2d\x66\x6f\x72\x6d','\x4e\x78\x5a\x61\x4e':function(_0x57a978,_0x3c7676){return _0x57a978(_0x3c7676);},'\x50\x65\x4e\x6f\x4e':'\x23\x6e\x61\x6d\x65','\x4e\x4f\x54\x6f\x4d':'\x23\x65\x6d\x70\x6c\x6f\x79\x65\x65\x49\x64','\x53\x6e\x67\x4c\x54':function(_0x4849c6,_0x46cdf9){return _0x4849c6>=_0x46cdf9;},'\x63\x4e\x70\x7a\x49':'\x23\x70\x61\x73\x73\x77\x6f\x72\x64','\x5a\x5a\x45\x4c\x7a':'\x2e\x71\x72\x2d\x67\x65\x6e\x65\x72\x61\x74\x6f\x72\x3a\x66\x69\x72\x73\x74','\x4f\x47\x61\x68\x4a':'\x64\x69\x73\x61\x62\x6c\x65\x64','\x61\x54\x59\x46\x69':'\x2e\x71\x72\x2d\x63\x6f\x64\x65\x2d\x63\x6f\x6e\x74\x61\x69\x6e\x65\x72','\x66\x4c\x67\x46\x61':function(_0x4d77cf,_0x101316){return _0x4d77cf!=_0x101316;},'\x47\x68\x42\x44\x5a':function(_0x5a76e1,_0x3d53f3){return _0x5a76e1+_0x3d53f3;},'\x59\x70\x77\x53\x52':function(_0x1d0960,_0x23e896){return _0x1d0960+_0x23e896;},'\x4d\x4e\x67\x61\x70':'\x64\x61\x74\x61\x2d\x74\x79\x70\x65','\x78\x41\x52\x41\x54':function(_0x45977e,_0x14bebb){return _0x45977e(_0x14bebb);},'\x75\x4f\x45\x57\x79':function(_0x2c38f9,_0x54ba13){return _0x2c38f9+_0x54ba13;},'\x55\x64\x62\x63\x47':function(_0xa455ec,_0x50d56a){return _0xa455ec+_0x50d56a;},'\x4e\x4a\x67\x45\x6b':function(_0x1aa673,_0x3062d6,_0x16d9b8){return _0x1aa673(_0x3062d6,_0x16d9b8);},'\x77\x70\x78\x57\x4f':'\x6b\x65\x79','\x4b\x5a\x56\x59\x46':function(_0x43463e,_0x406294){return _0x43463e+_0x406294;},'\x7a\x4d\x46\x70\x71':function(_0x38b442,_0xaad6cf){return _0x38b442+_0xaad6cf;},'\x68\x74\x4e\x4b\x52':function(_0x558821){return _0x558821();},'\x4c\x61\x79\x71\x5a':'\x23\x31\x63\x31\x63\x31\x63','\x72\x71\x56\x68\x67':'\x23\x66\x37\x66\x37\x66\x37','\x4f\x42\x46\x6e\x5a':'\x74\x69\x74\x6c\x65','\x4e\x56\x4c\x4f\x64':function(_0xd8f89c,_0x5dbf9a){return _0xd8f89c+_0x5dbf9a;},'\x72\x47\x63\x6b\x74':function(_0x9b0c62,_0x55764e){return _0x9b0c62==_0x55764e;},'\x48\x4c\x42\x68\x57':function(_0x809a7a,_0x3750c2){return _0x809a7a(_0x3750c2);},'\x74\x4c\x4b\x4b\x62':function(_0x2bb168,_0x51a7d6,_0x2ec741){return _0x2bb168(_0x51a7d6,_0x2ec741);},'\x45\x54\x44\x6a\x4b':function(_0x18802c,_0x240b62,_0x52ea32){return _0x18802c(_0x240b62,_0x52ea32);},'\x61\x58\x57\x70\x61':'\x23\x65\x6d\x61\x69\x6c\x2c\x20\x23\x70\x61\x73\x73\x77\x6f\x72\x64','\x78\x44\x56\x71\x46':'\x2e\x71\x72\x2d\x67\x65\x6e\x65\x72\x61\x74\x6f\x72','\x73\x45\x46\x6f\x7a':'\x63\x6c\x69\x63\x6b'};data=_0x43aae8['\x48\x4c\x42\x68\x57'](_0x2cd8ef,_0x43aae8['\x77\x70\x78\x57\x4f']);_0x43aae8['\x66\x4c\x67\x46\x61'](data,null)?_0x43aae8['\x74\x4c\x4b\x4b\x62'](setTimeout,function(){_0x43aae8['\x48\x73\x41\x53\x63']($,_0x43aae8['\x56\x79\x4a\x62\x4d'])['\x61\x64\x64\x43\x6c\x61\x73\x73'](_0x43aae8['\x4f\x79\x43\x66\x78']);},-0x165d+-0x2af*0x1+-0x4*-0x68e):_0x43aae8['\x45\x54\x44\x6a\x4b'](setTimeout,function(){_0x43aae8['\x6b\x57\x5a\x74\x79']($,_0x43aae8['\x4d\x4a\x68\x66\x4e'])['\x61\x64\x64\x43\x6c\x61\x73\x73']('\x61\x63\x74\x69\x76\x65');},0x4a2+0x1c*-0xb9+0x10c6);_0x43aae8['\x6b\x57\x5a\x74\x79']($,_0x43aae8['\x61\x58\x57\x70\x61'])['\x6f\x6e']('\x6b\x65\x79\x75\x70\x20\x63\x68\x61\x6e\x67\x65\x20\x63\x6c\x69\x63\x6b',function(){_0x43aae8['\x4e\x78\x5a\x61\x4e']($,_0x43aae8['\x50\x65\x4e\x6f\x4e'])['\x76\x61\x6c']()!=''&&_0x43aae8['\x48\x73\x41\x53\x63']($,_0x43aae8['\x4e\x4f\x54\x6f\x4d'])['\x76\x61\x6c']()!=''&&_0x43aae8['\x53\x6e\x67\x4c\x54'](_0x43aae8['\x48\x73\x41\x53\x63']($,_0x43aae8['\x63\x4e\x70\x7a\x49'])['\x76\x61\x6c']()['\x6c\x65\x6e\x67\x74\x68'],0x53*0x2f+-0x1*-0xd23+0x2*-0xe2d)?$(_0x43aae8['\x5a\x5a\x45\x4c\x7a'])['\x72\x65\x6d\x6f\x76\x65\x41\x74\x74\x72'](_0x43aae8['\x4f\x47\x61\x68\x4a']):_0x43aae8['\x4e\x78\x5a\x61\x4e']($,_0x43aae8['\x5a\x5a\x45\x4c\x7a'])['\x61\x74\x74\x72']('\x64\x69\x73\x61\x62\x6c\x65\x64',_0x43aae8['\x4f\x47\x61\x68\x4a']);}),$(_0x43aae8['\x78\x44\x56\x71\x46'])['\x6f\x6e'](_0x43aae8['\x73\x45\x46\x6f\x7a'],function(_0x290f25){var _0x1fedbb='\x33\x7c\x32\x7c\x30\x7c\x34\x7c\x31'['\x73\x70\x6c\x69\x74']('\x7c'),_0x460082=-0x44d*-0x4+-0x2a*-0x1d+-0x15f6;while(!![]){switch(_0x1fedbb[_0x460082++]){case'\x30':setTimeout(function(){_0x43aae8['\x4e\x78\x5a\x61\x4e']($,'\x2e\x6c\x6f\x67\x69\x6e\x2d\x66\x6f\x72\x6d')['\x72\x65\x6d\x6f\x76\x65\x43\x6c\x61\x73\x73'](_0x43aae8['\x4f\x79\x43\x66\x78']),_0x43aae8['\x6b\x57\x5a\x74\x79']($,'\x2e\x61\x74\x74\x65\x6e\x64\x61\x6e\x63\x65\x2d\x66\x6f\x72\x6d')['\x72\x65\x6d\x6f\x76\x65\x43\x6c\x61\x73\x73'](_0x43aae8['\x4f\x79\x43\x66\x78']),$(_0x43aae8['\x61\x54\x59\x46\x69'])['\x61\x64\x64\x43\x6c\x61\x73\x73'](_0x43aae8['\x4f\x79\x43\x66\x78']);},-0x4*-0x65+-0xe43+0xddb);continue;case'\x31':if(_0x43aae8['\x66\x4c\x67\x46\x61'](_0x1de739,null))_0x43aae8['\x6b\x57\x5a\x74\x79'](_0x597f7b,_0x43aae8['\x47\x68\x42\x44\x5a'](_0x43aae8['\x59\x70\x77\x53\x52'](_0x1de739,'\x3b'),$(this)['\x61\x74\x74\x72'](_0x43aae8['\x4d\x4e\x67\x61\x70'])));else{var _0x203f7d=$('\x23\x6e\x61\x6d\x65')['\x76\x61\x6c'](),_0x14dc08=_0x43aae8['\x6b\x57\x5a\x74\x79']($,_0x43aae8['\x4e\x4f\x54\x6f\x4d'])['\x76\x61\x6c'](),_0x4f3787=_0x43aae8['\x78\x41\x52\x41\x54']($,_0x43aae8['\x63\x4e\x70\x7a\x49'])['\x76\x61\x6c']();_0x1de739=_0x43aae8['\x75\x4f\x45\x57\x79'](_0x43aae8['\x55\x64\x62\x63\x47'](_0x43aae8['\x75\x4f\x45\x57\x79'](_0x43aae8['\x47\x68\x42\x44\x5a'](_0x203f7d,'\x3b'),_0x14dc08)+'\x3b',btoa(_0x4f3787))+'\x3b',_0x43aae8['\x78\x41\x52\x41\x54'](btoa,new Date())),_0x43aae8['\x4e\x4a\x67\x45\x6b'](_0x5331b8,_0x43aae8['\x77\x70\x78\x57\x4f'],_0x1de739),_0x597f7b(_0x43aae8['\x4b\x5a\x56\x59\x46'](_0x43aae8['\x7a\x4d\x46\x70\x71'](_0x1de739,'\x3b'),$(this)['\x61\x74\x74\x72'](_0x43aae8['\x4d\x4e\x67\x61\x70'])));}continue;case'\x32':var _0x1de739;continue;case'\x33':_0x290f25['\x70\x72\x65\x76\x65\x6e\x74\x44\x65\x66\x61\x75\x6c\x74']();continue;case'\x34':_0x1de739=_0x43aae8['\x6b\x57\x5a\x74\x79'](_0x2cd8ef,'\x6b\x65\x79');continue;}break;}});function _0x597f7b(_0x281329){var _0x30a7e7={'\x68\x4d\x61\x6a\x75':function(_0x5a7887,_0x46a78b){return _0x43aae8['\x4e\x56\x4c\x4f\x64'](_0x5a7887,_0x46a78b);},'\x56\x46\x77\x62\x68':function(_0x3e5f4b){return _0x3e5f4b();}},_0x4acc53=$('\x23\x71\x72\x2d\x63\x6f\x6e\x74\x61\x69\x6e\x65\x72');_0x43aae8['\x4e\x4a\x67\x45\x6b'](setTimeout,function(){_0x4acc53['\x65\x6d\x70\x74\x79']();var _0x570cf7=new QRCode(_0x4acc53[-0x18d2+-0x2*0x17e+0x1bce],{'\x74\x65\x78\x74':_0x30a7e7['\x68\x4d\x61\x6a\x75'](_0x281329,'\x3b')+_0x30a7e7['\x56\x46\x77\x62\x68'](_0x453e3d),'\x77\x69\x64\x74\x68':0x1a9,'\x68\x65\x69\x67\x68\x74':0x1a9,'\x63\x6f\x6c\x6f\x72\x44\x61\x72\x6b':'\x23\x31\x63\x31\x63\x31\x63','\x63\x6f\x6c\x6f\x72\x4c\x69\x67\x68\x74':'\x23\x66\x37\x66\x37\x66\x37','\x63\x6f\x72\x72\x65\x63\x74\x4c\x65\x76\x65\x6c':QRCode['\x43\x6f\x72\x72\x65\x63\x74\x4c\x65\x76\x65\x6c']['\x4c']});_0x4acc53['\x72\x65\x6d\x6f\x76\x65\x41\x74\x74\x72']('\x74\x69\x74\x6c\x65');},-0x45*0x15+-0x1b98*-0x1+-0x1333),_0x43aae8['\x4e\x4a\x67\x45\x6b'](setInterval,function(){_0x4acc53['\x65\x6d\x70\x74\x79']();var _0x169bdc=new QRCode(_0x4acc53[0x13*0xb+-0x936+0x865],{'\x74\x65\x78\x74':_0x281329+'\x3b'+_0x43aae8['\x68\x74\x4e\x4b\x52'](_0x453e3d),'\x77\x69\x64\x74\x68':0x1a9,'\x68\x65\x69\x67\x68\x74':0x1a9,'\x63\x6f\x6c\x6f\x72\x44\x61\x72\x6b':_0x43aae8['\x4c\x61\x79\x71\x5a'],'\x63\x6f\x6c\x6f\x72\x4c\x69\x67\x68\x74':_0x43aae8['\x72\x71\x56\x68\x67'],'\x63\x6f\x72\x72\x65\x63\x74\x4c\x65\x76\x65\x6c':QRCode['\x43\x6f\x72\x72\x65\x63\x74\x4c\x65\x76\x65\x6c']['\x4c']});_0x4acc53['\x72\x65\x6d\x6f\x76\x65\x41\x74\x74\x72'](_0x43aae8['\x4f\x42\x46\x6e\x5a']);},-0x1*-0x1157+0x13a7+-0xca3*0x2);}function _0x453e3d(){var _0x13422b=new Date();return[[_0x13422b['\x67\x65\x74\x44\x61\x74\x65'](),_0x43aae8['\x47\x68\x42\x44\x5a'](_0x13422b['\x67\x65\x74\x4d\x6f\x6e\x74\x68'](),0x1*0x101+-0x5e*-0x50+0x24*-0xd8),_0x13422b['\x67\x65\x74\x46\x75\x6c\x6c\x59\x65\x61\x72']()]['\x6a\x6f\x69\x6e']('\x2f'),[_0x13422b['\x67\x65\x74\x48\x6f\x75\x72\x73'](),_0x13422b['\x67\x65\x74\x4d\x69\x6e\x75\x74\x65\x73'](),_0x13422b['\x67\x65\x74\x53\x65\x63\x6f\x6e\x64\x73']()]['\x6a\x6f\x69\x6e']('\x3a')]['\x6a\x6f\x69\x6e']('\x2c\x20');}function _0x5331b8(_0x212325,_0x5df3c6){var _0x22da85={};_0x22da85['\x64\x61\x74\x61']=_0x5df3c6;var _0x154767=_0x22da85;localStorage['\x73\x65\x74\x49\x74\x65\x6d'](_0x212325,JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79'](_0x154767));}function _0x3252ab(_0x1344ea,_0x49e595){var _0x3a0d85=JSON['\x70\x61\x72\x73\x65'](localStorage['\x67\x65\x74\x49\x74\x65\x6d'](_0x1344ea)),_0x218788={};_0x218788['\x64\x61\x74\x61']=_0x49e595;var _0x58b42e=_0x218788;localStorage['\x72\x65\x6d\x6f\x76\x65\x49\x74\x65\x6d'](_0x1344ea),localStorage['\x73\x65\x74\x49\x74\x65\x6d'](_0x1344ea,JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79'](_0x58b42e));}function _0x44578b(_0x3f94f0){localStorage['\x72\x65\x6d\x6f\x76\x65\x49\x74\x65\x6d'](_0x3f94f0);}function _0x2cd8ef(_0x5b18a4){var _0x314fe8=JSON['\x70\x61\x72\x73\x65'](localStorage['\x67\x65\x74\x49\x74\x65\x6d'](_0x5b18a4));return _0x43aae8['\x72\x47\x63\x6b\x74'](_0x314fe8,null)?null:_0x314fe8['\x64\x61\x74\x61'];}});
+$(document).ready(function () {
+
+    data = get_data_object("key");
+    if (data != null){
+        setTimeout(function () {
+            $('.attendance-form').addClass('active');
+        }, 300);
+    }else{
+        setTimeout(function () {
+            $('.login-form').addClass('active');
+        }, 300);
+    }
+    
+    // In form if (email field is correct) and (password is >= 14 digits) then remove disabed from submit button
+    $('#name, #employeeId, #password').on('keyup change click', function () {
+        if ($('#name').val() != '' && $('#employeeId').val() != '' && $('#password').val().length >= 6) {
+            $('.qr-generator:first').removeAttr('disabled');
+        } else {
+            $('.qr-generator:first').attr('disabled', 'disabled');
+        }
+    });
+
+
+    $('.qr-generator').on('click', function (e) {
+        e.preventDefault();
+        var data;
+        setTimeout(function () {
+            $('.login-form').removeClass('active');
+            $('.attendance-form').removeClass('active');
+            $('.qr-code-container').addClass('active');
+            $("#qr-container").css("height",$("#qr-container")[0].getBoundingClientRect().width+"px");
+        }, 300);
+
+        data = get_data_object("key");
+        if (data != null){
+            generateQrCode(data + ";" + $(this).attr("data-type"));
+
+        }else{
+            var name = $('#name').val();
+            var employeeId = $('#employeeId').val();
+            var pass = $('#password').val();
+            data = name + ";" + employeeId + ";" + btoa(pass) + ";" + btoa(new Date());
+            Save_data("key",data);
+            generateQrCode(data + ";" + $(this).attr("data-type"));
+        }
+        
+    });
+
+    function generateQrCode(data){
+        var qrContainer = $('#qr-container');
+        setTimeout(function() {
+            qrContainer.empty();
+            var qrCode = new QRCode(qrContainer[0], {
+                text: data + ";" + getDate(),
+                width: 425,
+                height: 425,
+                colorDark: "#1c1c1c",
+                colorLight: "#f7f7f7",
+                correctLevel: QRCode.CorrectLevel.M
+            });
+            qrContainer.removeAttr('title');
+            qrContainer.removeAttr('style');
+        }, 700);
+        setInterval(function () {
+            qrContainer.empty();
+            var qrCode = new QRCode(qrContainer[0], {
+                text: data + ";" + getDate(),
+                width: 425,
+                height: 425,
+                colorDark: "#1c1c1c",
+                colorLight: "#f7f7f7",
+                correctLevel: QRCode.CorrectLevel.M
+            });
+            qrContainer.removeAttr('title');
+        }, 300000);
+    }
+
+    function getDate(){
+        var d = new Date();
+        return [[d.getDate(),d.getMonth()+1,d.getFullYear()].join("/"),[d.getHours(),d.getMinutes(),d.getSeconds()].join(":")].join(", ");
+    }
+
+
+    function Save_data(key,data) {
+        var object = {data: data}
+        localStorage.setItem(key, JSON.stringify(object));
+      }
+      
+    function Update_data(main_key,data_value) {
+        var val = JSON.parse(localStorage.getItem(main_key));
+        var object = {data: data_value};
+        localStorage.removeItem(main_key);
+        localStorage.setItem(main_key, JSON.stringify(object));
+    }
+      
+    function Delete_data(key) {
+        localStorage.removeItem(key);
+    }
+    
+    function get_data_object(key) {
+        var object = JSON.parse(localStorage.getItem(key));
+        if(object == null) {
+            return null;
+        }
+        else{
+            return object["data"];
+        }
+    }
+    
+    if (get_data_object("key") == null){
+        // Event Listner, on register QR Code generation, add a confirmation on leaving page.
+        $('.qr-generator[data-type="register"]').on('click', function (e) {
+            history.pushState(null, '', '');
+        });
+    }
+    window.onpopstate = function() {
+        if ($('.qr-code-container').hasClass('active')){
+            console.log(confirm("Did you get this 'Register QR Code' scanned on Attendance System\nIf not then show this QR Code in attendance system to get registered"));
+        }
+    };
+});
