@@ -23,17 +23,28 @@ $(document).ready(function () {
 
     $('.qr-generator').on('click', function (e) {
         e.preventDefault();
+        var qrGenerator = $(this);
         var data;
         setTimeout(function () {
             $('.login-form').removeClass('active');
             $('.attendance-form').removeClass('active');
             $('.qr-code-container').addClass('active');
             $("#qr-container").css("height",$("#qr-container")[0].getBoundingClientRect().width+"px");
+            console.log(qrGenerator.attr("data-type"));
+            if (qrGenerator.attr("data-type") == "register"){
+                $(".qr-code-text-heading.register").addClass("active");
+                $(".qr-code-text-heading.attendance").removeClass("active");
+                $(".heading").text("Register QR Code");
+            }else{
+                $(".qr-code-text-heading.register").removeClass("active");
+                $(".qr-code-text-heading.attendance").addClass("active");
+                $(".heading").text(qrGenerator.attr("data-type").replaceAll("-"," ") + " QR Code");
+            }
         }, 300);
 
         data = get_data_object("key");
         if (data != null){
-            generateQrCode(data + ";" + $(this).attr("data-type"));
+            generateQrCode(data + ";" + qrGenerator.attr("data-type"));
 
         }else{
             var name = $('#name').val();
@@ -60,7 +71,7 @@ $(document).ready(function () {
             });
             qrContainer.removeAttr('title');
             qrContainer.removeAttr('style');
-        }, 700);
+        }, 1000);
         setInterval(function () {
             qrContainer.empty();
             var qrCode = new QRCode(qrContainer[0], {
