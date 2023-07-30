@@ -108,6 +108,9 @@ nav{
         margin: 0 14px;
         height: 19px;
         vertical-align: sub;
+        border-width: 4px;
+        --bs-spinner-animation-speed: 0.32s !important;
+        border-bottom-width: 0px;
     }
 
     & img, & canvas{
@@ -118,7 +121,20 @@ nav{
 .qr-code-text{
     // margin-top: 30px;
     margin: 25px -8px 0px -8px;
+
+    & .qr-code-text-heading{
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
 }
+
+.custom-spinner{
+}
+
+
 
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
