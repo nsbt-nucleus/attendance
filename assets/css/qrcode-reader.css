@@ -97,6 +97,7 @@
 
 .toast{
   --bs-toast-bg: rgba(var(--bs-body-bg-rgb), 1);
+  --bs-toast-max-width: 375px;
   margin-bottom: 10px;
 }
 

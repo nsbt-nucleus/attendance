@@ -8,64 +8,37 @@ nav {
 
 .login-form {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 60px;
 }
-
 .login-form.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .login-form form {
   min-width: 240px;
   width: 280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.7rem;
 }
-
 .login-form form button {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .qr-code-container {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 60px;
 }
-
 .qr-code-container.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .qr-code-container img, .qr-code-container canvas {
   width: 255px;
   height: 255px;
@@ -73,52 +46,27 @@ nav {
 
 .attendance-form {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 60px;
 }
-
 .attendance-form.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .attendance-form form {
   min-width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.7rem;
 }
 
 .fade-in {
-  -webkit-animation: fadeIn 0.5s ease-in-out;
-          animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .fade-out {
-  -webkit-animation: fadeOut 0.5s ease-in-out;
-          animation: fadeOut 0.5s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fadeOut 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -129,16 +77,6 @@ nav {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -147,23 +85,15 @@ nav {
     opacity: 0;
   }
 }
-
 .qr-code-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 285px;
   width: 285px;
   border-radius: 15px;
-  border: 5px solid #1c1c1ced;
+  border: 5px solid rgba(28, 28, 28, 0.9294117647);
 }
-
 .qr-code-img .spinner-border {
   width: 19px;
   margin: 0 14px;
@@ -173,7 +103,6 @@ nav {
   --bs-spinner-animation-speed: 0.32s !important;
   border-bottom-width: 0px;
 }
-
 .qr-code-img img, .qr-code-img canvas {
   border-radius: 6px;
 }
@@ -181,21 +110,18 @@ nav {
 .qr-code-text {
   margin: 25px -8px 0px -8px;
 }
-
 .qr-code-text .qr-code-text-heading {
   display: none;
 }
-
 .qr-code-text .qr-code-text-heading.active {
   display: block;
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .qr-code-img {
-    border: 6px solid #1c1c1ced;
+    border: 6px solid rgba(28, 28, 28, 0.9294117647);
   }
 }
-
 @media screen and (max-width: 768px) {
   .login-form {
     margin-top: 70px;
@@ -221,5 +147,4 @@ nav {
     width: 100%;
     height: 100%;
   }
-}
-/*# sourceMappingURL=qr-generator.css.map */
+}/*# sourceMappingURL=qr-generator.css.map */

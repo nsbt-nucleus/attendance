@@ -10,6 +10,8 @@ $(document).ready(function () {
             $('.login-form').addClass('active');
         }, 300);
     }
+
+    const fpPromise = import("./fingerprint.js").then((FingerprintJS) => FingerprintJS.load());
     
     // In form if (email field is correct) and (password is >= 14 digits) then remove disabed from submit button
     $('#name, #employeeId, #password').on('keyup change click', function () {
@@ -21,7 +23,7 @@ $(document).ready(function () {
     });
 
 
-    $('.qr-generator').on('click', function (e) {
+    $('.qr-generator').on('click', async function (e) {
         e.preventDefault();
         var qrGenerator = $(this);
         var data;
@@ -43,6 +45,7 @@ $(document).ready(function () {
         }, 300);
 
         data = get_data_object("key");
+        console.log("visitor id", await getVisitorId());
         if (data != null){
             generateQrCode(data + ";" + qrGenerator.attr("data-type"));
 
@@ -50,7 +53,8 @@ $(document).ready(function () {
             var name = $('#name').val();
             var employeeId = $('#employeeId').val();
             var pass = $('#password').val();
-            data = name + ";" + employeeId + ";" + btoa(pass) + ";" + btoa(new Date());
+            var visitorId = await getVisitorId();
+            data = name + ";" + employeeId + ";" + btoa(pass) + ";" + btoa(employeeId+visitorId);
             Save_data("key",data);
             generateQrCode(data + ";" + $(this).attr("data-type"));
         }
@@ -89,6 +93,20 @@ $(document).ready(function () {
     function getDate(){
         var d = new Date();
         return [[d.getDate(),d.getMonth()+1,d.getFullYear()].join("/"),[d.getHours(),d.getMinutes(),d.getSeconds()].join(":")].join(", ");
+    }
+
+
+    async function getVisitorId() {
+        try {
+          const fp = await fpPromise;
+          const result = await fp.get();
+          visitorId = result.visitorId;
+          return visitorId;
+        } catch (error) {
+          console.log("cannot create unique registration key ", error);
+          // showToast("Cannot create a unique key ");
+          return "h7wDvUHYaTvjXExdz1UzyjyakKSD26ZJQ6zgfOZNx9c";
+        }
     }
 
 
