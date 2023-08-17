@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script>var svg; if (window.innerWidth > 780) {fetch("./assets/extend/svg.html").then(async function(res){svg=await res.text()})};</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +69,12 @@
             </div>
 
         </div>
-        <div class="col-md-6 d-flex illustration"></div>
+        <div class="col-md-6 d-flex illustration">
+            
+        </div>
+        <script>
+            document.querySelector(".illustration").innerHTML = svg;
+        </script>
     </div>
 
 </body>
