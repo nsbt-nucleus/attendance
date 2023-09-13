@@ -32,13 +32,15 @@
 
     <title>QR Generator</title>
 
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sigmar&family=Pacifico&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="../../assets/css/common.css">  
     <link rel="stylesheet" href="../../assets/css/qr-generator.css">  
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -52,7 +54,7 @@
             </ol>
         </nav>
           
-        <div class="heading">QR-Code Generator</div>
+        <div class="heading">QR Code Generator</div>
         
         <div class="login-form fade-in">
             <div class="instruction text-muted mb-2">Enter details to generate registration QR code</div>
@@ -86,7 +88,7 @@
             </form>
         </div>
         <div class="qr-code-container fade-in">
-            <div class="qr-code-img" id="qr-container">
+            <div class="qr-code-img" id="qr-container" style="background-color: white !important;">
                 <div class="spinner-border text-dark custom-spinner" role="status"></div>
             </div>
             <div class="qr-code-text">
@@ -97,8 +99,6 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="../../assets/js/QRCode.min.js"></script>
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="../../assets/js/qr-generator.js"></script>
 </html>

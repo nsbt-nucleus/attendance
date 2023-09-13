@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <script>var svg; if (window.innerWidth > 780) {fetch("./assets/extend/svg.html").then(async function(res){svg=await res.text()})};</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var svg; if (window.innerWidth > 780) {fetch("./assets/extend/svg.html").then(async function(res){svg=await res.text()})};</script>
     <meta name="title" content="Nsbt Attendance System">
     <meta name="description" content="Nsbt Attendance System is a QR code based attendance system for tracking attendance using QR codes. It is contactless, accurate, and easy to use system. It also verify the data with the database and generate reports.">
     <meta property="og:type" content="website">
@@ -34,12 +34,12 @@
     
     <title>NSBT-Attendance System</title>
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sigmar&family=Pacifico&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="./assets/css/index.css">  
 </head>
 
@@ -69,11 +69,11 @@
             </div>
 
         </div>
-        <div class="col-md-6 d-flex illustration">
-            
-        </div>
+        <div class="col-md-6 d-flex illustration"></div>
         <script>
-            document.querySelector(".illustration").innerHTML = svg;
+            var illustration=document.querySelector(".illustration");
+            var count=0;
+            var inter = setInterval(function(){count++;if(count>=50||illustration.innerHTML!="")clearInterval(inter);if(illustration.innerHTML==""&&svg!=""&&svg!=null&&svg!=undefined)illustration.innerHTML=svg;},300);
         </script>
     </div>
 
